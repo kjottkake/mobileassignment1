@@ -95,4 +95,28 @@ function displayTotalDoses(){
 };
 
 
+//task 1d. output the country name with the highest and lowest percentage of population fully vaccinated.
+
+//selection sort
+function selectionSort(){
+  let t0 = performance.now() //testing speed
+  var minIdx, temp, 
+      len = countryData.length;
+  for(var i = 0; i < len; i++){
+    minIdx = i;
+    for(var  j = i+1; j<len; j++){
+       if(countryData[j]["Percent fully vaccinated"]< countryData[minIdx]["Percent fully vaccinated"]){
+          minIdx = j;
+       }
+    }
+    temp = countryData[i]["Percent fully vaccinated"];
+    countryData[i]["Percent fully vaccinated"] = countryData[minIdx]["Percent fully vaccinated"];
+    countryData[minIdx]["Percent fully vaccinated"] = temp;
+  }
+  let t1 = performance.now() //testing speed
+  console.log("Call to selectionSort took " + (t1 - t0) + " milliseconds.") //output speed test
+  console.log("Lowest Country " + countryData[0].Country + "with a " + countryData[0]["Percent fully vaccinated"] + "% vaccinated rated")
+  console.log("Highest Country " + countryData[9].Country + "with a " + countryData[9]["Percent fully vaccinated"] + "% vaccinated rated")
+  return countryData;
+}
 
