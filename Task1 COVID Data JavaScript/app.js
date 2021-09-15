@@ -1,4 +1,4 @@
-const countryData = [
+let countryData = [
     {
       "Country": "China  ",
       "Total doses given": 2044625000,
@@ -10,6 +10,7 @@ const countryData = [
       "Total doses given": 684515513,
       "People fully vaccinated": 159196152,
       "Percent fully vaccinated": 11.7
+      
     },
     {
       "Country": "United States ",
@@ -61,9 +62,13 @@ const countryData = [
     }
    ]
 
+// let countryData = JSON.parse(Data);
+
 function displayFullyVaccinated(){
     let i = 0;
+    let total;
     for (i; i< countryData.length; i++){
-        
+        total = total + countryData[i]["People fully vaccinated"];
     }
+    console.log("Total Number of Vaccinated across all countries: " + total);
 };
