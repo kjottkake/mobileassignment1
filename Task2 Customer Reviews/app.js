@@ -1,0 +1,1 @@
+const customerReview = ["Sucked balls, 5/10 do not want", "Meh, was like ok.", "Totally suucks."];
