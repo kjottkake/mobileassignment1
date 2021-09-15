@@ -73,15 +73,26 @@ let countryData = [
 //     console.log("Total Number of Vaccinated across all countries: " + total);
 // };
 
+
+//task 1b. calculate the total number of fully vaccinated people for these countries
 function displayFullyVaccinated(){
   let i;
-  let total = 0;  //MUST INITALIZE AS 0
-  console.log("Total Number of Vaccinated across all countries: " + total);    
+  let total = 0;  //MUST INITALIZE AS 0  
   for (i = 0 ; i < countryData.length; i++){
       total  += countryData[i]["People fully vaccinated"]; //this is the format for displaying json elements with spaces in their names
-      // console.log("country:" + countryData[i]["Percent fully vaccinated"]);
   }
   console.log("Total Number of Vaccinated across all countries: " + total);
 };
+
+//task 1c. display the total number of doses given for all the listed countries
+function displayTotalDoses(){
+  let i;
+  let total = 0;  //MUST INITALIZE AS 0
+  for (i = 0 ; i < countryData.length; i++){
+      total  += countryData[i]["Total doses given"]; //this is the format for displaying json elements with spaces in their names
+  }
+  console.log("Total Number of Doses across all countries: " + total);
+};
+
 
 
