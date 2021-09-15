@@ -78,17 +78,10 @@ function displayFullyVaccinated(){
   let total = 0;  //MUST INITALIZE AS 0
   console.log("Total Number of Vaccinated across all countries: " + total);    
   for (i = 0 ; i < countryData.length; i++){
-      total  += countryData[i]["Percent fully vaccinated"]; //this is the format for displaying json elements with spaces in their names
-      console.log("country:" + countryData[i]["Percent fully vaccinated"]);
+      total  += countryData[i]["People fully vaccinated"]; //this is the format for displaying json elements with spaces in their names
+      // console.log("country:" + countryData[i]["Percent fully vaccinated"]);
   }
   console.log("Total Number of Vaccinated across all countries: " + total);
 };
 
 
-
-function test(){
-    let i;
-    for (i = 0; i < 10; i++){
-        console.table("index: " + i)
-    }
-}
