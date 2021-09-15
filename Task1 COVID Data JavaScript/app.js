@@ -62,18 +62,6 @@ let countryData = [
     }
    ]
 
-// function displayFullyVaccinated(){ //v1.0
-//     let i;
-//     let total = 0;  //MUST INITALIZE AS 0
-//     console.log("Total Number of Vaccinated across all countries: " + total);    
-//     for (i = 0 ; i < countryData.length; i++){
-//         total  += countryData[i]["Percent fully vaccinated"]; //this is the format for displaying json elements with spaces in their names
-//         console.log("country:" + countryData[i]["Percent fully vaccinated"]);
-//     }
-//     console.log("Total Number of Vaccinated across all countries: " + total);
-// };
-
-
 //task 1b. calculate the total number of fully vaccinated people for these countries
 function displayFullyVaccinated(){
   let i;
@@ -120,3 +108,17 @@ function selectionSort(){
   return countryData;
 }
 
+//task 1e. Based on the figures, estimate the total population of all ten countries.
+
+//total doses
+//people fully vaccinated
+//% of population fully vaccinated
+//x??? total population 
+//x = ()
+
+function totalPopulation(){
+  // (peoplefullyvaxed * 100) / percentage vaxed
+  let totalPop; 
+  totalPop = ((countryData[0]["People fully vaccinated"] * 100) / countryData[0]["Percent fully vaccinated"] );
+  console.log("Total population of " + countryData[0].Country + ": " + totalPop);
+}
