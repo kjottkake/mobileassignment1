@@ -1,0 +1,69 @@
+const countryData = [
+    {
+      "Country": "China  ",
+      "Total doses given": 2044625000,
+      "People fully vaccinated": 889439000,
+      "Percent fully vaccinated": 63.4
+    },
+    {
+      "Country": "India  ",
+      "Total doses given": 684515513,
+      "People fully vaccinated": 159196152,
+      "Percent fully vaccinated": 11.7
+    },
+    {
+      "Country": "United States ",
+      "Total doses given": 374488924,
+      "People fully vaccinated": 175968266,
+      "Percent fully vaccinated": 53.4
+    },
+    {
+      "Country": "Brazil ",
+      "Total doses given": 200714744,
+      "People fully vaccinated": 66548816,
+      "Percent fully vaccinated": 31.5
+    },
+    {
+      "Country": "Japan ",
+      "Total doses given": 133058203,
+      "People fully vaccinated": 59593329,
+      "Percent fully vaccinated": 47.3
+    },
+    {
+      "Country": "Indonesia ",
+      "Total doses given": 105005826,
+      "People fully vaccinated": 38223153,
+      "Percent fully vaccinated": 14.3
+    },
+    {
+      "Country": "Germany ",
+      "Total doses given": 102453033,
+      "People fully vaccinated": 50762444,
+      "Percent fully vaccinated": 61
+    },
+    {
+      "Country": "Turkey ",
+      "Total doses given": 97113297,
+      "People fully vaccinated": 38288329,
+      "Percent fully vaccinated": 46
+    },
+    {
+      "Country": "United Kingdom ",
+      "Total doses given": 91623530,
+      "People fully vaccinated": 43378193,
+      "Percent fully vaccinated": 65.3
+    },
+    {
+      "Country": "France ",
+      "Total doses given": 88660059,
+      "People fully vaccinated": 40912442,
+      "Percent fully vaccinated": 61
+    }
+   ]
+
+function displayFullyVaccinated(){
+    let i = 0;
+    for (i; i< countryData.length; i++){
+        
+    }
+};
